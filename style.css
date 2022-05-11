@@ -23,4 +23,14 @@ header{
 main{
     background-color: white;
     max-width: 750px;
+
+}
+
+nav{
+    text-align: left;
+
+}
+nav > a{
+    text-decoration: none;
+    color: white;
 }
