@@ -13,9 +13,10 @@
 header{
     background: rgb(26,47,92);
     background: linear-gradient(0deg, rgba(26,47,92,1) 25%, rgba(25,52,158,1) 90%);
-    max-height: 180px;
+    max-height: 200px;
     
 }
+
 
 span > a{
     font-family: Arial, Helvetica, sans-serif;
