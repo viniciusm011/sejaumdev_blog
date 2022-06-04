@@ -19,6 +19,7 @@ header{
 
 nav{
     text-align: center;
+    
 
 }
 
@@ -32,6 +33,7 @@ nav > a{
 }
 
 nav > a:hover{
-    color: #193396;
+    text-decoration: underline;
 
 }
+
