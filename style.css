@@ -1,0 +1,36 @@
+@charset "URL-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor1: #2E4159;
+    --cor2: #19349E
+}
+
+body{
+    background-color: #2E4159;
+
+}
+
+header{
+    background-color: #19349E;
+    height: 150px;
+}
+
+main{
+    background-color: white;
+    max-width: 750px;
+
+}
+
+nav{
+    text-align: left;
+
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+}
