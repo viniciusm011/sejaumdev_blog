@@ -10,30 +10,4 @@
     --cor2: #19349E
 }
 
-header{
-    background: rgb(26,47,92);
-    background: linear-gradient(0deg, rgba(26,47,92,1) 25%, rgba(25,52,158,1) 90%);
-    height: 200px;
-    
-}
-
-nav{
-    text-align: center;
-    
-
-}
-
-nav > a{
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    padding-left: 20px;
-    font-weight: bold;
-}
-
-nav > a:hover{
-    text-decoration: underline;
-
-}
 
