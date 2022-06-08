@@ -10,30 +10,57 @@
     --cor2: #19349E
 }
 
+html{
+    font-size: 62.5%;
+}
+
+html, body{
+    height: 100%;
+}
+body{
+    font-size: 1.6rem;
+}
+
 header{
     background: rgb(26,47,92);
     background: linear-gradient(0deg, rgba(26,47,92,1) 25%, rgba(25,52,158,1) 90%);
-    height: 200px;
+    height: 75px;
     
 }
 
-nav{
-    text-align: center;
-    
+header.container{
+    display: flex;
+    align-items: center;
 
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
 }
 
-nav > a{
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav  ul  li a{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    font-size: 1.8rem;
     color: white;
     text-align: center;
-    padding-left: 20px;
+    margin-left: 20px;
+    padding: 6px 10px;
     font-weight: bold;
 }
 
-nav > a:hover{
-    text-decoration: underline;
+nav ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 5px;
+    transition: 0.5s;
 
 }
+
 
