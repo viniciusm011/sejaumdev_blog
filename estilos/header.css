@@ -25,7 +25,7 @@ body{
 
 header{
     background: rgb(26,47,92);
-    background: linear-gradient(0deg, rgba(26,47,92,1) 25%, rgba(25,52,158,1) 90%);
+    background: linear-gradient(0deg, rgba(26,47,92,1) 25%, rgba(25,52,158,1) 80%);
     height: 120px;
 
 }
@@ -40,16 +40,27 @@ header.container{
 
     position: fixed;
 }
+/*MENU PRINCIPAL*/
 
-nav ul{
+.menu-section > nav{
+    position: absolute;
+    text-align: center;
+    top: 85px;
+    left: 30%;
+    
+
+}
+
+nav ul {
     display: flex;
 }
 
 nav ul li{
     list-style: none;
+    
 }
 
-nav  ul  li a{
+nav ul li a{
     font-family: 'Play', sans-serif;
     text-decoration: none;
     font-size: 1.8rem;
@@ -57,8 +68,7 @@ nav  ul  li a{
     text-align: center;
     margin-left: 40px;
     padding: 6px 10px;
-    font-weight: bolder;
-   
+    font-weight: bolder;   
 }
 
 nav ul li a:hover{
@@ -68,6 +78,29 @@ nav ul li a:hover{
     cursor: pointer;
 
 }
+
+/*SUB MENU (Em Stand-By)
+/*
+nav ul.secundario {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul.secundario {
+    width: 150px;
+    background-color: green;
+}
+
+nav ul.secundario li a{
+    display: block;
+}*/
+
+/*----------------------------*/
+
 .logo{
     position: relative;
 }
@@ -75,20 +108,51 @@ nav ul li a:hover{
 .logo > img{
     position: relative;
     bottom: 62.5px;
-    left: 20px;
+    left: 25px;
     
 
 }
 
-.menu-section > nav{
-    position: absolute;
-    text-align: center;
-    top: 90px;
-    right: 70px;
 
+/*CAIXA DE PESQUISA*/
+
+.search-box{
+    position: absolute;
+    top: 90px;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.842);
+    height: 26px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 10px;
 
 }
 
+.search-btn{ /*Para a estilização do Icon, porém não há*/
+    color: rgb(50, 50, 245);
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-text{ 
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 5px;
+    color: black;
+    font-size: 16px;
+    width: 240px;
+}
+
+
+/*-------------------------------*/
 @media(max-width: 964px) {
     html{
         font-size: 60%;
