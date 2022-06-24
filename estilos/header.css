@@ -27,6 +27,7 @@ header{
     background: rgb(26,47,92);
     background: linear-gradient(0deg, rgba(26,47,92,1) 25%, rgba(25,52,158,1) 80%);
     height: 120px;
+    
 
 }
 
@@ -129,15 +130,14 @@ nav ul.secundario li a{
 
 }
 
-.search-btn{ /*Para a estilização do Icon, porém não há*/
-    color: rgb(50, 50, 245);
+.search-btn{ 
     float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+  
 }
 
 .search-text{ 
@@ -150,9 +150,34 @@ nav ul.secundario li a{
     font-size: 16px;
     width: 240px;
 }
-
-
 /*-------------------------------*/
+
+
+/*NAV BAR RESPONSIVO MENU DROPDOWN*/
+.check-btn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-right: 170px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 964px) {
     html{
         font-size: 60%;
@@ -175,6 +200,10 @@ nav ul.secundario li a{
       
     }
 
+    .search-box{
+        display: none;
+    }
+
     
 }
 
@@ -183,4 +212,5 @@ nav ul.secundario li a{
         position: absolute;
         top: -60px;
     }
+
 }
