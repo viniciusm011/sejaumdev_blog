@@ -1,7 +1,6 @@
 @charset "URL-8";
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
-
 * {
     margin: 0px;
     padding: 0px;
@@ -48,6 +47,8 @@ header.container{
     text-align: center;
     top: 85px;
     left: 30%;
+   
+
     
 
 }
@@ -80,25 +81,10 @@ nav ul li a:hover{
 
 }
 
-/*SUB MENU (Em Stand-By)
-/*
-nav ul.secundario {
-    display: none;
-    position: absolute;
-}
+/*SUB MENU (Em Stand-By)*/
 
-nav ul li:hover ul {
-    display: block;
-}
 
-nav ul.secundario {
-    width: 150px;
-    background-color: green;
-}
 
-nav ul.secundario li a{
-    display: block;
-}*/
 
 /*----------------------------*/
 
@@ -127,6 +113,7 @@ nav ul.secundario li a{
     width: 300px;
     border-radius: 20px;
     padding: 10px;
+    
 
 }
 
@@ -157,8 +144,8 @@ nav ul.secundario li a{
 .check-btn{
     font-size: 30px;
     color: white;
-    float: right;
     margin-right: 170px;
+    float: right;
     cursor: pointer;
     display: none;
 }
@@ -168,11 +155,46 @@ nav ul.secundario li a{
 }
 
 
+@media(max-width: 858px) {
+    .check-btn{
+        display: block;
+    }
 
+    .material-icons{
+        position: fixed;
+        right: 50px;
+    }
 
+    .navegation, .search-box{
+        display: none;
+    }
 
+    nav > .navegation{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--cor1);
+        top: 125px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
 
+    nav .navegation li{
+        margin: 50px;
+        line-height: 30px;
+    }
 
+    nav .navegation li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ .navegation{ /*CASO CLIQUE, A NEVAGAÇÂO APARECERÁ*/
+        left: 0;
+    }
+   
+}
 
 
 
@@ -183,8 +205,10 @@ nav ul.secundario li a{
         font-size: 60%;
     }
 
+    nav > .navegation{
+        top: 120px;
+    }
 }
-
 
 @media(max-width: 790px) {
     html{
@@ -193,21 +217,18 @@ nav ul.secundario li a{
 
     header{
         height: 125px;
-    }
+    }      
+}  
 
-    .menu-section > nav{
-        display: none;
-      
+@media(max-width: 560px){
+    .logo img{
+        left: -10px;
+        transition: .5s;
     }
-
-    .search-box{
-        display: none;
-    }
-
-    
 }
 
-@media(min-height: 500px){
+
+@media(min-height: 500px){ /*Responsividade da LOGO*/
     .logo img{
         position: absolute;
         top: -60px;
