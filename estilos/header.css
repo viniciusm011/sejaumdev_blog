@@ -146,6 +146,8 @@ nav ul li:hover ul{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    
+   
   
 }
 
@@ -158,6 +160,14 @@ nav ul li:hover ul{
     color: black;
     font-size: 16px;
     width: 240px;
+}
+
+.search-btn .fa{
+    color: #1A2F5C;
+}
+
+.search-btn .fa:hover{
+    color: #19349C;
 }
 /*-------------------------------*/
 
