@@ -82,9 +82,31 @@ nav ul li a:hover{
 }
 
 /*SUB MENU (Em Stand-By)*/
+nav ul li .secundario li{
+    margin-top: 20px;
+}
 
 
+nav ul li .secundario li a{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
 
+
+}
+
+nav ul ul{
+    display: none;
+}
+
+nav ul li:hover ul{
+    display: block;
+    background-color: #1A2F5C;
+    text-align: left;
+    position: absolute;
+    top: 35px;
+    
+}
 
 /*----------------------------*/
 
@@ -155,6 +177,38 @@ nav ul li a:hover{
 }
 
 
+
+.search-btn-responsive{
+    display: none;
+}
+
+@media(max-width: 1300px){
+  .search-box{
+    display: none;
+  } 
+
+  .search-btn-responsive{
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 85px;
+    color: transparent;
+  }
+
+}
+
+
+
+@media(max-width: 964px) {
+    html{
+        font-size: 60%;
+    }
+
+    nav > .navegation{
+        top: 120px;
+    }
+}
+
 @media(max-width: 858px) {
     .check-btn{
         display: block;
@@ -162,7 +216,7 @@ nav ul li a:hover{
 
     .material-icons{
         position: fixed;
-        right: 50px;
+        right: 100px;
     }
 
     .navegation, .search-box{
@@ -194,20 +248,6 @@ nav ul li a:hover{
         left: 0;
     }
    
-}
-
-
-
-
-
-@media(max-width: 964px) {
-    html{
-        font-size: 60%;
-    }
-
-    nav > .navegation{
-        top: 120px;
-    }
 }
 
 @media(max-width: 790px) {
