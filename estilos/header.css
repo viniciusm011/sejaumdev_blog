@@ -97,7 +97,6 @@ nav ul li .secundario li .second-nav{
     font-size: 16.5px;
     cursor: pointer;
 
-
 }
 
 nav ul li .secundario li .second-nav:hover{
@@ -116,20 +115,22 @@ nav ul li:hover ul{
     top: 35px;
 
     padding-right: 20px;
+
+    transition-duration: 5s;
     
 }
 
 nav ul li:hover #categories{
     position: absolute;
-    right: 267px;
+    right: 260px;
 
 }
 
 nav ul li:hover #about{
     position: absolute;
     max-width: 200px;
-    right: 8px;
-    max-height: 80px
+    right: 0px;
+    max-height: 80px;
 }
 
 /*------------LOGO----------------*/
